@@ -71,8 +71,8 @@ export default function ProgressIndicator() {
           {/* Progress Bar */}
           <div className="mb-12">
             <div className="flex justify-between items-center mb-4">
-              <span className="text-lg font-semibold">{currentCount.toLocaleString()} entrepreneurs joined</span>
-              <span className="text-lg font-semibold">{nextMilestone.count.toLocaleString()} goal</span>
+              <span className="text-lg font-semibold">{currentCount.toLocaleString()} Entrepreneur Joined</span>
+              <span className="text-lg font-semibold">{nextMilestone.count.toLocaleString()} Goal</span>
             </div>
             <div className="w-full bg-zinc-200 rounded-full h-4 overflow-hidden">
               <motion.div
@@ -84,7 +84,7 @@ export default function ProgressIndicator() {
                 style={{ width: `${progressPercentage}%` }}
               />
             </div>
-            <div className="text-center mt-2 text-zinc-600">{Math.round(progressPercentage)}% complete</div>
+            <div className="text-center mt-2 text-zinc-600">{Math.round(progressPercentage)}% Complete</div>
           </div>
 
           {/* Milestones */}

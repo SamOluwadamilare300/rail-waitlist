@@ -40,7 +40,7 @@ export default function Hero() {
               </a>
               <a href="#" className="text-zinc-600 hover:text-black text-lg transition-colors">
                 Pricing
-              </a>
+              </a>.
             </div>
             <Button
               className="bg-black text-white hover:bg-zinc-800 rounded-xl px-6"
