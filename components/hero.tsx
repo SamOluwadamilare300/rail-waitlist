@@ -20,7 +20,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex items-center justify-between p-6 md:p-8"
+          className="flex items-center justify-between z-50 sticky top-4 p-6 md:p-8 bg-white/80 backdrop-blur-lg rounded-2xl mx-6 shadow-lg border border-white/20"
           >
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
@@ -29,16 +29,16 @@ export default function Hero() {
               <span className="text-xl font-bold">Rail</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#features" className="text-zinc-600 hover:text-black transition-colors">
+              <a href="#features" className="text-zinc-600 hover:text-black text-md transition-colors">
                 Solutions
               </a>
-              <a href="#" className="text-zinc-600 hover:text-black transition-colors">
+              <a href="#" className="text-zinc-600 hover:text-black text-lg transition-colors">
                 Success Stories
               </a>
-              <a href="#" className="text-zinc-600 hover:text-black transition-colors">
+              <a href="#" className="text-zinc-600 hover:text-black text-lg transition-colors">
                 Resources
               </a>
-              <a href="#" className="text-zinc-600 hover:text-black transition-colors">
+              <a href="#" className="text-zinc-600 hover:text-black text-lg transition-colors">
                 Pricing
               </a>
             </div>
@@ -60,7 +60,7 @@ export default function Hero() {
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="flex flex-col justify-center space-y-8"
+              className="flex flex-col mt-10 justify-center space-y-8"
             >
               <div className="space-y-6">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">

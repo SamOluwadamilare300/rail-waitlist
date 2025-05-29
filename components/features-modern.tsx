@@ -236,6 +236,7 @@ export default function FeaturesModern() {
         </div>
 
         {/* Additional Features Grid */}
+       {/* Additional Features Grid */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -248,7 +249,7 @@ export default function FeaturesModern() {
             <p className="text-xl text-zinc-600">Every feature is designed with one goal: your success</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {additionalFeatures.map((feature, index) => (
               <motion.div
                 key={index}
@@ -256,28 +257,60 @@ export default function FeaturesModern() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className={`p-6 rounded-2xl border-2 ${(feature.color in bgColorClasses ? bgColorClasses[feature.color as keyof typeof bgColorClasses] : "bg-zinc-50 border-zinc-200")} hover:shadow-lg transition-all duration-300 hover:-translate-y-1`}
+                className="group relative"
               >
-                <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${colorClasses[feature.color]}`}>
-                  {feature.icon}
-                </div>
+                {/* Glassmorphic card container */}
+                <div className="relative bg-white/80 backdrop-blur-xl p-8 rounded-3xl shadow-xl border border-white/20 hover:shadow-2xl hover:bg-white/90 transition-all duration-500 hover:-translate-y-2 overflow-hidden h-full">
+                  {/* Subtle gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-zinc-50/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  
+                  {/* Floating background blur effect */}
+                  <div className={`absolute -top-6 -right-6 w-24 h-24 rounded-full opacity-10 group-hover:opacity-20 transition-opacity duration-500 ${
+                    feature.color === "emerald" ? "bg-emerald-400" :
+                    feature.color === "blue" ? "bg-blue-400" :
+                    feature.color === "purple" ? "bg-purple-400" : "bg-teal-400"
+                  }`}></div>
+                  
+                  <div className="relative z-10">
+                    {/* Icon container with enhanced styling */}
+                    <div className="mb-6">
+                      <div className={`w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110 ${colorClasses[feature.color]}`}>
+                        {feature.icon}
+                      </div>
+                    </div>
 
-                <div className="mb-3">
-                  <span className={`text-xs font-semibold px-2 py-1 rounded-full ${
-                    feature.color === "emerald"
-                      ? "bg-emerald-200 text-emerald-800"
-                      : feature.color === "blue"
-                        ? "bg-blue-200 text-blue-800"
-                        : feature.color === "purple"
-                          ? "bg-purple-200 text-purple-800"
-                          : "bg-teal-200 text-teal-800"
-                  }`}>
-                    {feature.benefit}
-                  </span>
-                </div>
+                    {/* Badge with glassmorphic effect */}
+                    <div className="mb-4">
+                      <span className={`inline-flex items-center text-xs font-bold px-3 py-1.5 rounded-full backdrop-blur-sm border transition-all duration-300 ${
+                        feature.color === "emerald"
+                          ? "bg-emerald-100/70 border-emerald-200/50 text-emerald-700 group-hover:bg-emerald-100 group-hover:shadow-emerald-200/50"
+                          : feature.color === "blue"
+                            ? "bg-blue-100/70 border-blue-200/50 text-blue-700 group-hover:bg-blue-100 group-hover:shadow-blue-200/50"
+                            : feature.color === "purple"
+                              ? "bg-purple-100/70 border-purple-200/50 text-purple-700 group-hover:bg-purple-100 group-hover:shadow-purple-200/50"
+                              : "bg-teal-100/70 border-teal-200/50 text-teal-700 group-hover:bg-teal-100 group-hover:shadow-teal-200/50"
+                      } shadow-sm group-hover:shadow-md`}>
+                        {feature.benefit}
+                      </span>
+                    </div>
 
-                <h3 className="text-lg font-bold mb-3">{feature.title}</h3>
-                <p className="text-zinc-600 text-sm leading-relaxed">{feature.description}</p>
+                    {/* Content */}
+                    <h3 className="text-xl font-bold mb-4 text-zinc-800 group-hover:text-zinc-900 transition-colors duration-300">
+                      {feature.title}
+                    </h3>
+                    <p className="text-zinc-600 leading-relaxed group-hover:text-zinc-700 transition-colors duration-300">
+                      {feature.description}
+                    </p>
+                  </div>
+
+                  {/* Bottom accent line */}
+                  <div className={`absolute bottom-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
+                    feature.color === "emerald" ? "bg-gradient-to-r from-emerald-400 to-emerald-500" :
+                    feature.color === "blue" ? "bg-gradient-to-r from-blue-400 to-blue-500" :
+                    feature.color === "purple" ? "bg-gradient-to-r from-purple-400 to-purple-500" : 
+                    "bg-gradient-to-r from-teal-400 to-teal-500"
+                  }`}></div>
+                </div>
               </motion.div>
             ))}
           </div>
