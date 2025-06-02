@@ -77,28 +77,28 @@ export default function FeaturesModern() {
       title: "Increase Your Sales",
       description: "Boost revenue by up to 300% with AI-powered recommendations and smart upselling",
       benefit: "More Revenue",
-      color: "emerald",
+      color: "black",
     },
     {
       icon: <Users className="h-8 w-8" />,
       title: "Reach More Customers",
       description: "Connect with millions of African shoppers through our integrated marketplace",
       benefit: "Bigger Audience",
-      color: "blue",
+      color: "black",
     },
     {
       icon: <Smartphone className="h-8 w-8" />,
       title: "Sell Anywhere, Anytime",
       description: "Mobile-first design ensures your customers can shop seamlessly on any device",
       benefit: "24/7 Sales",
-      color: "purple",
+      color: "black",
     },
     {
       icon: <Globe className="h-8 w-8" />,
       title: "Go Global Easily",
       description: "Expand beyond borders with built-in international shipping and currency support",
       benefit: "Global Reach",
-      color: "teal",
+      color: "black",
     }
   ]
 
@@ -266,9 +266,9 @@ export default function FeaturesModern() {
                   
                   {/* Floating background blur effect */}
                   <div className={`absolute -top-6 -right-6 w-24 h-24 rounded-full opacity-10 group-hover:opacity-20 transition-opacity duration-500 ${
-                    feature.color === "emerald" ? "bg-emerald-400" :
-                    feature.color === "blue" ? "bg-blue-400" :
-                    feature.color === "purple" ? "bg-purple-400" : "bg-teal-400"
+                    feature.color === "emerald" ? "bg-black" :
+                    feature.color === "blue" ? "bg-black" :
+                    feature.color === "purple" ? "bg-black" : "bg-black/30"
                   }`}></div>
                   
                   <div className="relative z-10">
@@ -280,19 +280,13 @@ export default function FeaturesModern() {
                     </div>
 
                     {/* Badge with glassmorphic effect */}
-                    <div className="mb-4">
-                      <span className={`inline-flex items-center text-xs font-bold px-3 py-1.5 rounded-full backdrop-blur-sm border transition-all duration-300 ${
-                        feature.color === "emerald"
-                          ? "bg-emerald-100/70 border-emerald-200/50 text-emerald-700 group-hover:bg-emerald-100 group-hover:shadow-emerald-200/50"
-                          : feature.color === "blue"
-                            ? "bg-blue-100/70 border-blue-200/50 text-blue-700 group-hover:bg-blue-100 group-hover:shadow-blue-200/50"
-                            : feature.color === "purple"
-                              ? "bg-purple-100/70 border-purple-200/50 text-purple-700 group-hover:bg-purple-100 group-hover:shadow-purple-200/50"
-                              : "bg-teal-100/70 border-teal-200/50 text-teal-700 group-hover:bg-teal-100 group-hover:shadow-teal-200/50"
-                      } shadow-sm group-hover:shadow-md`}>
-                        {feature.benefit}
-                      </span>
-                    </div>
+                <div className="mb-4">
+           <span className={`inline-flex items-center text-xs font-bold px-3 py-1.5 rounded-full backdrop-blur-sm border transition-all duration-300 
+    bg-black border-black text-white 
+    group-hover:bg-black group-hover:shadow-black`}>
+    {feature.benefit}
+          </span>
+           </div>
 
                     {/* Content */}
                     <h3 className="text-xl font-bold mb-4 text-zinc-800 group-hover:text-zinc-900 transition-colors duration-300">
@@ -304,12 +298,9 @@ export default function FeaturesModern() {
                   </div>
 
                   {/* Bottom accent line */}
-                  <div className={`absolute bottom-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
-                    feature.color === "emerald" ? "bg-gradient-to-r from-emerald-400 to-emerald-500" :
-                    feature.color === "blue" ? "bg-gradient-to-r from-blue-400 to-blue-500" :
-                    feature.color === "purple" ? "bg-gradient-to-r from-purple-400 to-purple-500" : 
-                    "bg-gradient-to-r from-teal-400 to-teal-500"
-                  }`}></div>
+              <div className={`absolute bottom-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500 
+  bg-gradient-to-r from-gray-800 to-black`}>
+</div>
                 </div>
               </motion.div>
             ))}

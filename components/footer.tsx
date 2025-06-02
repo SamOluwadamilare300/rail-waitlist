@@ -19,31 +19,31 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="space-y-6">
             <div className="group">
-              <h3 className="text-3xl font-bold bg-gradient-to-r from-white via-zinc-200 to-zinc-300 bg-clip-text text-transparent mb-4 group-hover:from-blue-400 group-hover:to-purple-400 transition-all duration-500">
+              <h3 className="text-3xl font-bold bg-gradient-to-r from-white via-zinc-200 to-zinc-300 bg-clip-text text-transparent mb-4 group-hover:from-green-400 group-hover:to-lime-400 transition-all duration-500">
                 Rail
               </h3>
-              <div className="w-12 h-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mb-4 group-hover:w-16 transition-all duration-300"></div>
+              <div className="w-12 h-1 bg-gradient-to-r from-green-500 to-lime-600 rounded-full mb-4 group-hover:w-16 transition-all duration-300"></div>
             </div>
             <p className="mb-6 text-zinc-300 leading-relaxed">
               The next-generation e-commerce platform built for the African market, empowering businesses with cutting-edge technology.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="group relative p-3 bg-zinc-800/50 backdrop-blur-sm rounded-xl border border-zinc-700/50 hover:border-blue-500/50 hover:bg-zinc-700/50 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/10">
+              <a href="#" className="group relative p-3 bg-zinc-800/50 backdrop-blur-sm rounded-xl border border-zinc-700/50 hover:border-lime-500/50 hover:bg-zinc-700/50 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/10">
                 <FaXTwitter className="h-5 w-5 text-zinc-400 group-hover:text-white transition-colors duration-300" />
                 <span className="sr-only">X</span>
-                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-500/0 to-purple-600/0 group-hover:from-blue-500/10 group-hover:to-purple-600/10 transition-all duration-300"></div>
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-500/0 to-purple-600/0 group-hover:from-blue-500/10 group-hover:to-lime-600/10 transition-all duration-300"></div>
               </a>
               
-              <a href="#" className="group relative p-3 bg-zinc-800/50 backdrop-blur-sm rounded-xl border border-zinc-700/50 hover:border-pink-500/50 hover:bg-zinc-700/50 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-pink-500/10">
+              <a href="#" className="group relative p-3 bg-zinc-800/50 backdrop-blur-sm rounded-xl border border-zinc-700/50 hover:border-lime-500/50 hover:bg-zinc-700/50 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-pink-500/10">
                 <AiFillTikTok className="h-5 w-5 text-zinc-400 group-hover:text-white transition-colors duration-300" />
                 <span className="sr-only">Tiktok</span>
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-pink-500/0 to-red-500/0 group-hover:from-pink-500/10 group-hover:to-red-500/10 transition-all duration-300"></div>
               </a>
               
-              <a href="#" className="group relative p-3 bg-zinc-800/50 backdrop-blur-sm rounded-xl border border-zinc-700/50 hover:border-purple-500/50 hover:bg-zinc-700/50 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-500/10">
+              <a href="#" className="group relative p-3 bg-zinc-800/50 backdrop-blur-sm rounded-xl border border-zinc-700/50 hover:border-lime-500/50 hover:bg-zinc-700/50 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-500/10">
                 <FaInstagram className="h-5 w-5 text-zinc-400 group-hover:text-white transition-colors duration-300" />
                 <span className="sr-only">Instagram</span>
-                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-purple-500/0 to-pink-500/0 group-hover:from-purple-500/10 group-hover:to-pink-500/10 transition-all duration-300"></div>
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-purple-500/0 to-pink-500/0 group-hover:from-lime-500/10 group-hover:to-pink-500/10 transition-all duration-300"></div>
               </a>
             </div>
           </div>
@@ -110,31 +110,31 @@ export default function Footer() {
 
           <div className="space-y-6">
             <div className="group">
-              <h3 className="text-lg font-semibold text-white mb-4 group-hover:text-blue-400 transition-colors duration-300">Platform</h3>
-              <div className="w-8 h-0.5 bg-gradient-to-r from-blue-500 to-transparent rounded-full mb-4 group-hover:w-12 transition-all duration-300"></div>
+              <h3 className="text-lg font-semibold text-white mb-4 group-hover:text-green-400 transition-colors duration-300">Platform</h3>
+              <div className="w-8 h-0.5 bg-gradient-to-r from-lime-500 to-transparent rounded-full mb-4 group-hover:w-12 transition-all duration-300"></div>
             </div>
             <ul className="space-y-3">
               <li>
                 <a href="#features" className="group flex items-center py-2 px-3 rounded-lg hover:bg-zinc-800/30 hover:text-white transition-all duration-300 hover:translate-x-1">
-                  <span className="w-1.5 h-1.5 bg-zinc-600 rounded-full mr-3 group-hover:bg-blue-500 transition-colors duration-300"></span>
+                  <span className="w-1.5 h-1.5 bg-zinc-600 rounded-full mr-3 group-hover:bg-lime-500 transition-colors duration-300"></span>
                   Features
                 </a>
               </li>
               <li>
                 <a href="#" className="group flex items-center py-2 px-3 rounded-lg hover:bg-zinc-800/30 hover:text-white transition-all duration-300 hover:translate-x-1">
-                  <span className="w-1.5 h-1.5 bg-zinc-600 rounded-full mr-3 group-hover:bg-blue-500 transition-colors duration-300"></span>
+                  <span className="w-1.5 h-1.5 bg-zinc-600 rounded-full mr-3 group-hover:bg-green-500 transition-colors duration-300"></span>
                   Pricing
                 </a>
               </li>
               <li>
                 <a href="#" className="group flex items-center py-2 px-3 rounded-lg hover:bg-zinc-800/30 hover:text-white transition-all duration-300 hover:translate-x-1">
-                  <span className="w-1.5 h-1.5 bg-zinc-600 rounded-full mr-3 group-hover:bg-blue-500 transition-colors duration-300"></span>
+                  <span className="w-1.5 h-1.5 bg-zinc-600 rounded-full mr-3 group-hover:bg-green-500 transition-colors duration-300"></span>
                   Documentation
                 </a>
               </li>
               <li>
                 <a href="#" className="group flex items-center py-2 px-3 rounded-lg hover:bg-zinc-800/30 hover:text-white transition-all duration-300 hover:translate-x-1">
-                  <span className="w-1.5 h-1.5 bg-zinc-600 rounded-full mr-3 group-hover:bg-blue-500 transition-colors duration-300"></span>
+                  <span className="w-1.5 h-1.5 bg-zinc-600 rounded-full mr-3 group-hover:bg-green-500 transition-colors duration-300"></span>
                   API
                 </a>
               </li>
@@ -143,31 +143,31 @@ export default function Footer() {
 
           <div className="space-y-6">
             <div className="group">
-              <h3 className="text-lg font-semibold text-white mb-4 group-hover:text-purple-400 transition-colors duration-300">Company</h3>
-              <div className="w-8 h-0.5 bg-gradient-to-r from-purple-500 to-transparent rounded-full mb-4 group-hover:w-12 transition-all duration-300"></div>
+              <h3 className="text-lg font-semibold text-white mb-4 group-green:text-purple-400 transition-colors duration-300">Company</h3>
+              <div className="w-8 h-0.5 bg-gradient-to-r from-green-500 to-transparent rounded-full mb-4 group-hover:w-12 transition-all duration-300"></div>
             </div>
             <ul className="space-y-3">
               <li>
                 <a href="#" className="group flex items-center py-2 px-3 rounded-lg hover:bg-zinc-800/30 hover:text-white transition-all duration-300 hover:translate-x-1">
-                  <span className="w-1.5 h-1.5 bg-zinc-600 rounded-full mr-3 group-hover:bg-purple-500 transition-colors duration-300"></span>
+                  <span className="w-1.5 h-1.5 bg-zinc-600 rounded-full mr-3 group-hover:bg-green-500 transition-colors duration-300"></span>
                   About
                 </a>
               </li>
               <li>
                 <a href="#" className="group flex items-center py-2 px-3 rounded-lg hover:bg-zinc-800/30 hover:text-white transition-all duration-300 hover:translate-x-1">
-                  <span className="w-1.5 h-1.5 bg-zinc-600 rounded-full mr-3 group-hover:bg-purple-500 transition-colors duration-300"></span>
+                  <span className="w-1.5 h-1.5 bg-zinc-600 rounded-full mr-3 group-hover:bg-green-500 transition-colors duration-300"></span>
                   Blog
                 </a>
               </li>
               <li>
                 <a href="#" className="group flex items-center py-2 px-3 rounded-lg hover:bg-zinc-800/30 hover:text-white transition-all duration-300 hover:translate-x-1">
-                  <span className="w-1.5 h-1.5 bg-zinc-600 rounded-full mr-3 group-hover:bg-purple-500 transition-colors duration-300"></span>
+                  <span className="w-1.5 h-1.5 bg-zinc-600 rounded-full mr-3 group-hover:bg-green-500 transition-colors duration-300"></span>
                   Careers
                 </a>
               </li>
               <li>
                 <a href="#" className="group flex items-center py-2 px-3 rounded-lg hover:bg-zinc-800/30 hover:text-white transition-all duration-300 hover:translate-x-1">
-                  <span className="w-1.5 h-1.5 bg-zinc-600 rounded-full mr-3 group-hover:bg-purple-500 transition-colors duration-300"></span>
+                  <span className="w-1.5 h-1.5 bg-zinc-600 rounded-full mr-3 group-hover:bg-green-500 transition-colors duration-300"></span>
                   Contact
                 </a>
               </li>
@@ -185,11 +185,11 @@ export default function Footer() {
           <div className="flex space-x-8 mt-4 md:mt-0">
             <a href="#" className="group relative py-2 px-4 rounded-lg hover:bg-zinc-800/30 hover:text-white transition-all duration-300">
               Privacy Policy
-              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 group-hover:w-full transition-all duration-300"></div>
+              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-green-500 to-lime-600 group-hover:w-full transition-all duration-300"></div>
             </a>
             <a href="#" className="group relative py-2 px-4 rounded-lg hover:bg-zinc-800/30 hover:text-white transition-all duration-300">
               Terms of Service
-              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 group-hover:w-full transition-all duration-300"></div>
+              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-green-500 to-lime-600 group-hover:w-full transition-all duration-300"></div>
             </a>
           </div>
         </div>
